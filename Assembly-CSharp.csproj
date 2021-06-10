@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scipts\PlayerCollision.cs" />
     <Compile Include="Assets\Scipts\FollowPlayer.cs" />
     <Compile Include="Assets\Scipts\PlayerMovement.cs" />
+    <Compile Include="Assets\Score.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
