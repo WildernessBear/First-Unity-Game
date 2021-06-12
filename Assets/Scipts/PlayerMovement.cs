@@ -16,14 +16,22 @@ public class PlayerMovement : MonoBehaviour
         // constant no mater the frame rate
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
 
+        // move left
         if (Input.GetKey("d"))
         {
             rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
+        // move right
         if (Input.GetKey("a"))
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        }
+
+        // end game if player falls off ground
+        if (rb.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }

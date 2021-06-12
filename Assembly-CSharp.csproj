@@ -60,7 +60,9 @@
     <Compile Include="Assets\Scipts\PlayerCollision.cs" />
     <Compile Include="Assets\Scipts\FollowPlayer.cs" />
     <Compile Include="Assets\Scipts\PlayerMovement.cs" />
-    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Scipts\GameManager.cs" />
+    <Compile Include="Assets\Scipts\EndTrigger.cs" />
+    <Compile Include="Assets\LevelComplete.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
